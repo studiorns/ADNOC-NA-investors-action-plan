@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADNOC Q2 2025 Strategic Action Plan</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #ffffff;
+            color: #333;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+        }
+
+        .slide-header {
+            border-bottom: 2px solid #0047BA;
+            padding: 50px 60px 30px 60px;
+            background: #ffffff;
+        }
+
+        .slide-number {
+            color: #0047BA;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .slide-title {
+            color: #0047BA;
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .slide-subtitle {
+            color: #666;
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        .content-wrapper {
+            padding: 40px 60px 60px 60px;
+        }
+
+        .strategic-context {
+            background: #f8f9fa;
+            border: 1px solid #e1e5e9;
+            padding: 30px;
+            margin-bottom: 40px;
+        }
+
+        .context-header {
+            color: #0047BA;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #e1e5e9;
+            padding-bottom: 10px;
+        }
+
+        .context-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .context-item {
+            text-align: center;
+            padding: 20px;
+            background: white;
+            border: 1px solid #e1e5e9;
+        }
+
+        .context-value {
+            font-size: 24px;
+            font-weight: 700;
+            color: #0047BA;
+            margin-bottom: 8px;
+        }
+
+        .context-label {
+            font-size: 12px;
+            color: #666;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+
+        .section-title {
+            color: #0047BA;
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 1px solid #e1e5e9;
+            padding-bottom: 10px;
+        }
+
+        .actions-container {
+            margin-bottom: 40px;
+        }
+
+        .action-item {
+            background: #ffffff;
+            border: 1px solid #e1e5e9;
+            margin-bottom: 30px;
+            overflow: hidden;
+        }
+
+        .action-header {
+            background: #0047BA;
+            color: white;
+            padding: 15px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .action-title {
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .priority-badge {
+            background: white;
+            color: #0047BA;
+            padding: 4px 12px;
+            font-size: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .priority-urgent {
+            background: #dc3545;
+            color: white;
+        }
+
+        .priority-strategic {
+            background: #f39c12;
+            color: white;
+        }
+
+        .action-content {
+            padding: 25px;
+        }
+
+        .action-section {
+            margin-bottom: 20px;
+        }
+
+        .action-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .section-label {
+            color: #0047BA;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .section-content {
+            color: #333;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .metrics-row {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .metric-box {
+            background: #f8f9fa;
+            border: 1px solid #e1e5e9;
+            padding: 12px;
+            text-align: center;
+        }
+
+        .metric-value {
+            font-size: 14px;
+            font-weight: 700;
+            color: #0047BA;
+            margin-bottom: 4px;
+        }
+
+        .metric-label {
+            font-size: 10px;
+            color: #666;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+
+        .coordination-section {
+            background: #f8f9fa;
+            border: 1px solid #e1e5e9;
+            padding: 30px;
+            margin-bottom: 40px;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .team-item {
+            background: white;
+            border: 1px solid #e1e5e9;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .team-item.lead {
+            background: #0047BA;
+            color: white;
+        }
+
+        .team-name {
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+
+        .team-role {
+            font-size: 10px;
+            opacity: 0.8;
+        }
+
+        .success-section {
+            background: #ffffff;
+            border: 2px solid #0047BA;
+            padding: 30px;
+            margin-bottom: 40px;
+        }
+
+        .success-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .success-item {
+            text-align: center;
+            background: #f8f9fa;
+            padding: 20px;
+            border: 1px solid #e1e5e9;
+        }
+
+        .success-value {
+            font-size: 28px;
+            font-weight: 700;
+            color: #0047BA;
+            margin-bottom: 8px;
+        }
+
+        .success-label {
+            font-size: 11px;
+            color: #666;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+
+        .resource-section {
+            background: #f8f9fa;
+            border: 1px solid #e1e5e9;
+            padding: 30px;
+        }
+
+        .resource-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .resource-item {
+            text-align: center;
+            background: white;
+            padding: 25px;
+            border: 1px solid #e1e5e9;
+        }
+
+        .resource-value {
+            font-size: 24px;
+            font-weight: 700;
+            color: #0047BA;
+            margin-bottom: 8px;
+        }
+
+        .resource-label {
+            font-size: 12px;
+            color: #666;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .slide-header, .content-wrapper {
+                padding: 30px 25px;
+            }
+
+            .slide-title {
+                font-size: 24px;
+            }
+
+            .context-grid, .team-grid, .success-grid, .resource-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .metrics-row {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .action-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .slide-header, .content-wrapper {
+                padding: 20px 15px;
+            }
+
+            .slide-title {
+                font-size: 20px;
+            }
+
+            .metrics-row {
+                grid-template-columns: 1fr;
+            }
+
+            .context-value, .success-value, .resource-value {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="slide-header">
+            <h1 class="slide-title">What should we do next?</h1>
+            <p class="slide-subtitle">North American Investor Credibility Plan | Q2 2025 Low-Carbon Investment Positioning</p>
+        </div>
+
+        <div class="content-wrapper">
+            <!-- Strategic Context -->
+            <div class="strategic-context">
+                <div class="context-header">North American Institutional Investor Context | Q1 2025</div>
+                <div class="context-grid">
+                    <div class="context-item">
+                        <div class="context-value">$8.4B</div>
+                        <div class="context-label">Total North American AUM Surveyed</div>
+                    </div>
+                    <div class="context-item">
+                        <div class="context-value">127</div>
+                        <div class="context-label">Institutional Investors Engaged</div>
+                    </div>
+                    <div class="context-item">
+                        <div class="context-value">74</div>
+                        <div class="context-label">Low-Carbon Credibility Score</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Priority Actions -->
+            <div class="actions-container">
+                <h2 class="section-title">Priority Actions</h2>
+
+                <!-- Action 1: Carbon Capture -->
+                <div class="action-item">
+                    <div class="action-header">
+                        <div class="action-title">Low-Carbon Investment Timeline Transparency</div>
+                        <div class="priority-badge priority-urgent">Urgent - 30 Days</div>
+                    </div>
+                    <div class="action-content">
+                        <div class="action-section">
+                            <div class="section-label">Investment Context</div>
+                            <div class="section-content">
+                                Carbon capture project delays drove +72% negative coverage escalation, directly impacting North American institutional investor confidence in ADNOC's low-carbon investment thesis. 89% of ESG-focused funds ($420M AUM) cite execution timeline transparency as critical for portfolio inclusion decisions.
+                            </div>
+                        </div>
+                        <div class="action-section">
+                            <div class="section-label">Strategic Action</div>
+                            <div class="section-content">
+                                Commission independent engineering assessment from Bechtel/KBR and publish investor-grade progress report with revised project milestones, capital allocation timeline, and risk mitigation strategies. Include quarterly investor briefings across New York, Toronto, and Chicago financial centers.
+                            </div>
+                        </div>
+                        <div class="action-section">
+                            <div class="section-label">Investment Impact</div>
+                            <div class="section-content">
+                                Restore institutional investor confidence in low-carbon execution capability, enabling portfolio inclusion by ESG-focused funds and securing $420M AUM opportunity within Q2 2025.
+                            </div>
+                            <div class="metrics-row">
+                                <div class="metric-box">
+                                    <div class="metric-value">$420M</div>
+                                    <div class="metric-label">AUM Opportunity</div>
+                                </div>
+                                <div class="metric-box">
+                                    <div class="metric-value">89%</div>
+                                    <div class="metric-label">ESG Fund Interest</div>
+                                </div>
+                                <div class="metric-box">
+                                    <div class="metric-value">$2M</div>
+                                    <div class="metric-label">Investment</div>
+                                </div>
+                                <div class="metric-box">
+                                    <div class="metric-value">Sustainability</div>
+                                    <div class="metric-label">Lead Owner</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Action 2: ESG Audit -->
+                <div class="action-item">
+                    <div class="action-header">
+                        <div class="action-title">Institutional-Grade ESG Verification</div>
+                        <div class="priority-badge priority-urgent">Urgent - 45 Days</div>
+                    </div>
+                    <div class="action-content">
+                        <div class="action-section">
+                            <div class="section-label">Fiduciary Context</div>
+                            <div class="section-content">
+                                Greenwashing allegations surged +125% across North American financial media, triggering fiduciary risk concerns among pension funds and endowments. 73% of institutional investors require third-party ESG verification for low-carbon investment inclusion, representing $2.8B potential AUM.
+                            </div>
+                        </div>
+                        <div class="action-section">
+                            <div class="section-label">Strategic Action</div>
+                            <div class="section-content">
+                                Commission EY or KPMG for comprehensive institutional-grade ESG audit meeting SEC and CSA disclosure standards. Include independent verification of all low-carbon claims, TCFD compliance assessment, and investor-ready sustainability reporting framework.
+                            </div>
+                        </div>
+                        <div class="action-section">
+                            <div class="section-label">Investment Impact</div>
+                            <div class="section-content">
+                                Achieve institutional-grade ESG credibility, enabling inclusion in North American pension fund and endowment portfolios with fiduciary ESG mandates.
+                            </div>
+                            <div class="metrics-row">
+                                <div class="metric-box">
+                                    <div class="metric-value">$2.8B</div>
+                                    <div class="metric-label">Institutional AUM</div>
+                                </div>
+                                <div class="metric-box">
+                                    <div class="metric-value">73%</div>
+                                    <div class="metric-label">Require Verification</div>
+                                </div>
+                                <div class="metric-box">
+                                    <div class="metric-value">$5M</div>
+                                    <div class="metric-label">Investment</div>
+                                </div>
+                                <div class="metric-box">
+                                    <div class="metric-value">Sustainability</div>
+                                    <div class="metric-label">Lead Owner</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Action 3: AI Innovation -->
+                <div class="action-item">
+                    <div class="action-header">
+                        <div class="action-title">Technology Investment Thesis Validation</div>
+                        <div class="priority-badge priority-strategic">Strategic - Q2 2025</div>
+                    </div>
+                    <div class="action-content">
+                        <div class="action-section">
+                            <div class="section-label">Investment Context</div>
+                            <div class="section-content">
+                                North American tech-focused funds rank ADNOC 3rd of 4 on clean technology innovation despite proven execution advantage (78 vs Shell's 70 reliability score). This perception gap limits access to $1.2B in technology-focused ESG funds seeking proven low-carbon innovation leaders.
+                            </div>
+                        </div>
+                        <div class="action-section">
+                            <div class="section-label">Strategic Action</div>
+                            <div class="section-content">
+                                Launch investor-focused AI innovation showcase targeting North American financial centers. Include quantified ROI case studies, third-party technology validation, and partnership announcements with proven applications over future promises. Deploy across investor roadshows in Silicon Valley, Boston, and Toronto.
+                            </div>
+                        </div>
+                        <div class="action-section">
+                            <div class="section-label">Investment Impact</div>
+                            <div class="section-content">
+                                Position ADNOC as credible low-carbon technology investment, enabling inclusion in North American innovation-focused ESG portfolios and closing competitive perception gap.
+                            </div>
+                            <div class="metrics-row">
+                                <div class="metric-box">
+                                    <div class="metric-value">$1.2B</div>
+                                    <div class="metric-label">Tech ESG Funds</div>
+                                </div>
+                                <div class="metric-box">
+                                    <div class="metric-value">+25%</div>
+                                    <div class="metric-label">Innovation Score</div>
+                                </div>
+                                <div class="metric-box">
+                                    <div class="metric-value">$3M</div>
+                                    <div class="metric-label">Investment</div>
+                                </div>
+                                <div class="metric-box">
+                                    <div class="metric-value">Marketing</div>
+                                    <div class="metric-label">Lead Owner</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Action 4: Competitive Positioning -->
+                <div class="action-item">
+                    <div class="action-header">
+                        <div class="action-title">Investment Case Differentiation Strategy</div>
+                        <div class="priority-badge priority-strategic">Strategic - Q2-Q3 2025</div>
+                    </div>
+                    <div class="action-content">
+                        <div class="action-section">
+                            <div class="section-label">Investment Context</div>
+                            <div class="section-content">
+                                ADNOC's proven execution advantage (78 vs Shell's 70 reliability score) remains underutilized in North American investor communications. 82% of institutional investors prioritize execution track record over ambitious targets, representing $4.2B in value-focused energy portfolios seeking reliable low-carbon investments.
+                            </div>
+                        </div>
+                        <div class="action-section">
+                            <div class="section-label">Strategic Action</div>
+                            <div class="section-content">
+                                Develop investor-grade comparative advantage framework highlighting execution speed, regional stability, and capital efficiency vs Shell/TotalEnergies. Deploy through targeted investor relations campaigns across North American financial centers and institutional roadshows.
+                            </div>
+                        </div>
+                        <div class="action-section">
+                            <div class="section-label">Investment Impact</div>
+                            <div class="section-content">
+                                Establish ADNOC as preferred low-carbon energy investment for North American value-focused institutional portfolios seeking execution certainty over speculative promises.
+                            </div>
+                            <div class="metrics-row">
+                                <div class="metric-box">
+                                    <div class="metric-value">$4.2B</div>
+                                    <div class="metric-label">Value-Focused AUM</div>
+                                </div>
+                                <div class="metric-box">
+                                    <div class="metric-value">82%</div>
+                                    <div class="metric-label">Prefer Execution</div>
+                                </div>
+                                <div class="metric-box">
+                                    <div class="metric-value">$1.5M</div>
+                                    <div class="metric-label">Investment</div>
+                                </div>
+                                <div class="metric-box">
+                                    <div class="metric-value">Strategy</div>
+                                    <div class="metric-label">Lead Owner</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cross-Functional Coordination -->
+            <div class="coordination-section">
+                <div class="context-header">Cross-Functional Coordination</div>
+                <div class="team-grid">
+                    <div class="team-item lead">
+                        <div class="team-name">Communications</div>
+                        <div class="team-role">Lead Coordinator</div>
+                    </div>
+                    <div class="team-item lead">
+                        <div class="team-name">Investor Relations</div>
+                        <div class="team-role">Stakeholder Interface</div>
+                    </div>
+                    <div class="team-item lead">
+                        <div class="team-name">Sustainability</div>
+                        <div class="team-role">Technical Delivery</div>
+                    </div>
+                    <div class="team-item">
+                        <div class="team-name">Marketing</div>
+                        <div class="team-role">Campaign Execution</div>
+                    </div>
+                    <div class="team-item">
+                        <div class="team-name">Strategy</div>
+                        <div class="team-role">Competitive Intelligence</div>
+                    </div>
+                    <div class="team-item">
+                        <div class="team-name">Legal</div>
+                        <div class="team-role">Compliance Support</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Success Metrics -->
+            <div class="success-section">
+                <div class="context-header">Q2 2025 North American Investment Success Targets</div>
+                <div class="success-grid">
+                    <div class="success-item">
+                        <div class="success-value">85+</div>
+                        <div class="success-label">Low-Carbon Credibility Score</div>
+                    </div>
+                    <div class="success-item">
+                        <div class="success-value">$8.6B</div>
+                        <div class="success-label">Total North American AUM</div>
+                    </div>
+                    <div class="success-item">
+                        <div class="success-value">150+</div>
+                        <div class="success-label">Institutional Investors Engaged</div>
+                    </div>
+                    <div class="success-item">
+                        <div class="success-value">95%</div>
+                        <div class="success-label">Portfolio Inclusion Rate</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resource Allocation -->
+            <div class="resource-section">
+                <div class="context-header">Resource Allocation Summary</div>
+                <div class="resource-grid">
+                    <div class="resource-item">
+                        <div class="resource-value">$11.5M</div>
+                        <div class="resource-label">Total Investment</div>
+                    </div>
+                    <div class="resource-item">
+                        <div class="resource-value">3.2x</div>
+                        <div class="resource-label">Expected ROI</div>
+                    </div>
+                    <div class="resource-item">
+                        <div class="resource-value">8 Months</div>
+                        <div class="resource-label">Payback Period</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
